@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+}
+h1,h2,h3,h4 {
+    font-family: Arial;
+}
+p {
+    font-family: Helvetica;
+    font-size: 18px;
+}
+br {
+    display: block;
+    margin: 5px 0;
+}
+
+.pageNav {
+    font-family: Helvetica;
+}
+.pageNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+.pageNav li {
+    float: left;
+    min-width: 160px;
+    text-align: center;
+    border: black 4px solid;
+}
+.pageNav li a {
+    display: block;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.pageNav a:hover {
+    background-color: rgb(29, 119, 197);
+}
