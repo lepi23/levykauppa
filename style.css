@@ -1,6 +1,7 @@
 body {
-    background-color: black;
-    color: blanchedalmond;
+    background-color: #FFF;
+    margin: 0 auto;
+
 }
 h1,h2,h3,h4 {
     font-family: Arial;
@@ -8,6 +9,9 @@ h1,h2,h3,h4 {
 p {
     font-family: Helvetica;
     font-size: 18px;
+    max-width: 620px;
+    min-width: 200px;
+    line-height: 30px;
 }
 br {
     display: block;
@@ -16,24 +20,48 @@ br {
 
 .pageNav {
     font-family: Helvetica;
+    background-color:crimson;
+    width: 100%;
+    z-index: 10;
+    margin: 0px;
 }
 .pageNav ul {
     list-style-type: none;
-    margin: 0;
     padding: 10px;
     overflow: hidden;
+    text-align: center;
 }
 .pageNav li {
-    float: left;
     min-width: 160px;
     text-align: center;
-    border: black 4px solid;
+    border: white 4px solid;
+    display: inline-block;
+    color: white;
 }
 .pageNav li a {
     display: block;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: crimson;
+    text-decoration: none;
+    color: inherit;
 }
 .pageNav a:hover {
-    background-color: rgb(29, 119, 197);
+    background-color: rgb(133, 16, 39);
+}
+#banner {
+    /*background-image: url("./banner.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: auto;
+    width: auto;*/
+    background-color: black;
+}
+header {
+    color: black;
+    text-align: center;
+}
+h1 {
+    padding: 100px;
+    font-size: 50px;
+    color: white;
 }
