@@ -20,7 +20,7 @@ br {
 .pageNav {
     overflow: hidden;
     font-family: Helvetica;
-    background-color:black;
+    background-color:crimson;
     width: 100%;
     z-index: 10;
     margin: 0px;
@@ -45,7 +45,7 @@ br {
 .pageNav li a {
     display: block;
     padding: 10px;
-    background-color: black;
+    background-color: crimson;
     text-decoration: none;
     color: inherit;
 }
