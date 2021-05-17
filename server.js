@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv")
-const port = 4001;
+const port = process.env.PORT || 4001;
 const MongoClient = require('mongodb').MongoClient;
-dotenv.config()
-const dbUrl =
-  "mongodb+srv://"+process.env.DB_USERNAME+":"+process.env.DB_PASSWORD+"@cluster0.o9ghq.mongodb.net/levytDb?retryWrites=true&w=majority";
+dotenv.config();
+const dbUrl = process.env.DB_URI;
+  //"mongodb+srv://"+process.env.DB_USERNAME+":"+process.env.DB_PASSWORD+"@cluster0.o9ghq.mongodb.net/levytDb?retryWrites=true&w=majority";
 
 const app = express();
 
