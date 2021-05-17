@@ -1,6 +1,9 @@
 {
   "name": "levykauppa",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.17.0"
+  },
   "description": "",
   "main": "server.js",
   "dependencies": {
