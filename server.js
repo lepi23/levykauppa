@@ -69,6 +69,7 @@ app.get('/suomilevyt', (req, res) => {
     });
   });
   //muut
+  
   app.get('/muut', (req, res) => {
     MongoClient.connect(dbUrl, { useUnifiedTopology: true }, (err, client) => {
       if (err) return console.error(err);
@@ -85,6 +86,7 @@ app.get('/suomilevyt', (req, res) => {
         });
     });
   });
+
 /* --------------------------------
  *    START SERVER
  * -------------------------------- */
