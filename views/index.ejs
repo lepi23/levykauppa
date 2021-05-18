@@ -3,9 +3,11 @@
     <head>
         <title>Kaaos korporaatio: Pääsivu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="punk, punk levyjä, lp, punk lp, levykauppa">
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="/punkLetters.css">
         <link rel="stylesheet" href="/punkLettersRainbow.css">
+        <script src="/components/header.js" type="text/javascript" defer></script>
     </head>
     <body>
         <nav class="pageNav">
@@ -13,18 +15,11 @@
                 <li><a href="./"><strong>Pääsivu</strong></a></li>
                 <li><a href="./ulkomaiset_levyt">Ulkomaiset levyt</a></li>
                 <li><a href="./suomilevyt">Suomalaiset levyt</a>  </li>
-                <li><a href="./otherStuff.html">Muut tuotteet</a>  </li>
+                <li><a href="./muut">Muut tuotteet</a>  </li>
             </ul>
         </nav>
-        
-        <header>
-                <h1 class="punk">
-                    <span>K</span><span>a</span><span>a</span><span>o</span><span>s</span>
-                    <span></span>
-                    <br>
-                    <span>K</span><span>o</span><span style="color:black">r</span><span>p</span><span>o</span><span>r</span><span>a</span><span>a</span><span>t</span><span>i</span><span>o</span>
-                </h1>
-            </header>
+        <!-- header -->
+        <%- include('partials/header') %>
         <main>
             <section id="info">
                 <h2>INFO</h2>
@@ -83,6 +78,6 @@
                     </table>
                   </div>
             </section>
-        </main>    
+        </main>
     </body>
 </html>

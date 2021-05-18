@@ -51,6 +51,7 @@ app.get('/suomilevyt', (req, res) => {
         });
     });
   });
+  //ulkomaiset levyt
   app.get('/ulkomaiset_levyt', (req, res) => {
     MongoClient.connect(dbUrl, { useUnifiedTopology: true }, (err, client) => {
       if (err) return console.error(err);
@@ -61,6 +62,23 @@ app.get('/suomilevyt', (req, res) => {
         .toArray()
         .then((results) => {
           res.render('foreignRecords.ejs', { ulkomaiset_levyt: results });
+        })
+        .catch((error) => {
+          res.redirect('/');
+        });
+    });
+  });
+  //muut
+  app.get('/muut', (req, res) => {
+    MongoClient.connect(dbUrl, { useUnifiedTopology: true }, (err, client) => {
+      if (err) return console.error(err);
+      const db = client.db('levykauppaData');
+      const collection = db.collection('muut');
+      collection
+        .find()
+        .toArray()
+        .then((results) => {
+          res.render('otherStuff.ejs', { muut: results });
         })
         .catch((error) => {
           res.redirect('/');
