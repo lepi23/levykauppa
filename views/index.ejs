@@ -56,28 +56,6 @@
             </section>
             <section id="newRecords">
                 <h2>Uutta</h2>
-                <%# read from database %>
-                <div class="itemTable" id="table1">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Artistin nimi</th>
-                          <th>Levyn nimi</th>
-                          <th>Hinta</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <% for(var i = 0; i < levyt.length; i++) { %>
-                        <tr>
-                          <td><%= levyt[i].aname %></td>
-                          <td><%= levyt[i].rname %></td>
-                          <td><%= levyt[i].price %></td>
-                        </tr>
-                        <% } %>
-                      </tbody>
-                    </table>
-
-                  </div>
             </section>
         </main>
     </body>
