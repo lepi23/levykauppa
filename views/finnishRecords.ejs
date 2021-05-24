@@ -3,8 +3,6 @@
     <head>
         <title>Kaaos korporaatio: Suomalaiset levyt</title>
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="/punkLetters.css">
-        <link rel="stylesheet" href="/punkLettersRainbow.css">
     </head>
     <body>
         <nav class="pageNav">
@@ -23,26 +21,6 @@
                 <a href="https://www.discogs.com/seller/kaaoskorp/profile">https://www.discogs.com/seller/kaaoskorp/profile</a> </p>
             </section>
             <h2>Suomi-levyt:</h2>
-            <div class="itemTable">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Artistin nimi</th>
-                      <th>Levyn nimi</th>
-                      <th>Hinta</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <% for(var i = 0; i < suomilevyt.length; i++) { %>
-                    <tr>
-                      <td><%= suomilevyt[i].aname %></td>
-                      <td><%= suomilevyt[i].rname %></td>
-                      <td><%= suomilevyt[i].price %></td>
-                    </tr>
-                    <% } %>
-                  </tbody>
-                </table>
-              </div>
             <ul class="productList">
                 <li>013: TAKAISIN TODELLISUUTEEN LP +7" 15 &euro; musta vinyyli / 18 &euro; vihre&auml; vinyyli</li>
                 <li>ABORTTI 13: ABORTTI 13 mg &nbsp;CD 3 &euro;</li>
@@ -182,6 +160,26 @@
                 <li>YALTA HI LIFE LP 12 &euro; &nbsp;varaus, kaaos, tk, &auml;p&auml;r&auml;t, ktmk, aivoproteesi</li>
                 <li>YDINPERHE: &Auml;L&Auml; TEE MIT&Auml; PIT&Auml;&Auml; LP 15 &euro; eka painos, mussta vinyyli</li>
             </ul>
+            <div class="itemTable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Artistin nimi</th>
+                      <th>Levyn nimi</th>
+                      <th>Hinta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% for(var i = 0; i < suomilevyt.length; i++) { %>
+                    <tr>
+                      <td><%= suomilevyt[i].aname %></td>
+                      <td><%= suomilevyt[i].rname %></td>
+                      <td><%= suomilevyt[i].price %></td>
+                    </tr>
+                    <% } %>
+                  </tbody>
+                </table>
+              </div>
         </main>
     </body>
 </html>

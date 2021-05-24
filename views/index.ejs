@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="punk, punk levyjä, lp, punk lp, levykauppa">
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="/punkLetters.css">
-        <link rel="stylesheet" href="/punkLettersRainbow.css">
+        
         <script src="/components/header.js" type="text/javascript" defer></script>
+        <script src="/functionality/sortTable.js" type="text/javascript" defer></script>
     </head>
     <body>
         <nav class="pageNav">
@@ -57,7 +57,7 @@
             <section id="newRecords">
                 <h2>Uutta</h2>
                 <%# read from database %>
-                <div class="itemTable">
+                <div class="itemTable" id="table1">
                     <table>
                       <thead>
                         <tr>
@@ -76,6 +76,7 @@
                         <% } %>
                       </tbody>
                     </table>
+
                   </div>
             </section>
         </main>
