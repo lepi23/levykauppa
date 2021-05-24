@@ -1,5 +1,5 @@
 @font-face { font-family: Punk_Kid; src: url('punk_kid.ttf'); } 
-@font-face { font-family: If; src: url('If.ttf'); } 
+@font-face { font-family: If; src: url('If.ttf') format("ttf"); } 
 
 body {
     background-color: white;
@@ -118,7 +118,7 @@ main {
 
 .punk{
     font-family: If, Fallback, sans-serif;;
-    font-size: 72px;
+    font-size: 90px;
     color: black;
     background-color:#ccc;
 }
